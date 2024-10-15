@@ -31,4 +31,6 @@ if (len(driver.find_elements(By.LINK_TEXT, "Create Account")) > 0):
     email_input.send_keys(email)
     pw_input.send_keys(pw)
     login_button.click()
+    driver.get(url) # website does not redirect correctly after log in
 
+time.sleep(10)
